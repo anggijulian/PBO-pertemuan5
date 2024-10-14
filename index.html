@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD Terumbu Karang</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>CRUD Terumbu Karang</h1>
+  <form action="create.php" method="post">
+    <label for="lokasi">Lokasi:</label>
+    <input type="text" id="lokasi" name="lokasi"><br><br>
+    <label for="spesies">Spesies:</label>
+    <input type="text" id="spesies" name="spesies"><br><br>
+    <label for="ukuran">Ukuran:</label>
+    <input type="text" id="ukuran" name="ukuran"><br><br>
+    <label for="status_kesehatan">Status Kesehatan:</label>
+    <input type="text" id="status_kesehatan" name="status_kesehatan"><br><br>
+    <input type="submit" name="submit" value="Tambah Data">
+  </form>
+
+  <h2>Data Terumbu Karang</h2>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Lokasi</th>
+      <th>Spesies</th>
+      <th>Ukuran</th>
+      <th>Status Kesehatan</th>
+      <th>Aksi</th>
+    </tr>
+  </table>
+</body>
+</html>
